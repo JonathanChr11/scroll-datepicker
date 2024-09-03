@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+}
+
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-picker {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.scroll-section {
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    text-align: center;
+    position: relative;
+}
+
+.scroll-section::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #999;
+    scroll-snap-align: center;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+.selected {
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.selected-date {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
